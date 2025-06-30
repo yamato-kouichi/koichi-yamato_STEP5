@@ -32,7 +32,7 @@ function buttonClick(){
 
     // 入力の処理
     if (textbox.value !== ""){
-        msg.classList.add("highlight")
+        msg.classList.toggle("highlight")
     msg.innerText = textbox.value;
     console.log(countLoop)
     
@@ -85,8 +85,8 @@ function buttonClick2(){
     const deleteButton2 = document.createElement("button2"); 
     
     //順に消える処理
-    if (countTable2 >= 3 && countTable2){
-        table2.deleteRow(1)
+    if (countTable2 >= 2 && countTable2){
+        table2.deleteRow(0)
     }else{
 
         msg2.innerText = textbox2.value;
